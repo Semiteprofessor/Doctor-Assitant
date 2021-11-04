@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1085.0" styleClass="login" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalManagement.LoginController">
+   <children>
+      <BorderPane layoutX="369.0" layoutY="247.0" prefHeight="694.0" prefWidth="938.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="49.0" prefWidth="1085.0" BorderPane.alignment="CENTER_RIGHT">
+               <children>
+                  <Label prefHeight="41.0" prefWidth="231.0" style="-fx-font-weight: bold; -fx-font-family: ubuntu; -fx-font-size: 12;" stylesheets="@../css/School.css" text="GeoCodec Technologies&#10;08069095729" textAlignment="CENTER" textFill="#7c0000">
+                     <graphic>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="82.0">
+                           <children>
+                              <Label style="-fx-font-family: ubuntu; -fx-font-size: 12;" text="Developed By:" textFill="#00064d" />
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                  <HBox alignment="TOP_CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="97.0" prefWidth="1327.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="1086.0" style="-fx-background-color: #003cc7; -fx-font-family: BeckerBlackNF;" styleClass="dr-assistant" text="HOSPITAL MANAGEMENT" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="956.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="535.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <GridPane hgap="5.0" layoutX="98.0" layoutY="108.0" prefHeight="94.0" prefWidth="325.0" vgap="10.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField fx:id="tfUserName" promptText="User name" GridPane.columnSpan="2" />
+                              <PasswordField fx:id="pfPassword" prefWidth="317.0" promptText="Password" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                        <Text layoutX="170.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN IN">
+                           <font>
+                              <Font name="System Bold" size="40.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnLogin" defaultButton="true" layoutX="189.0" layoutY="217.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="32.0" prefWidth="133.0" text="Login" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
