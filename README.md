@@ -1,4 +1,3 @@
-[![Download Dr Assistant](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/dr-assistant/files/latest/download)
 
 # Dr Assistant 
 ##
@@ -20,11 +19,4 @@ Dr.Assistant is developed with JavaFX and SQLite so user don't need to worry abo
  * Prescription templates
  * Total drug uses by template and prescription
  * Easy installation
-
-
-### Video Demo :
-
-[![Youtube video](https://a.fsdn.com/con/app/proj/dr-assistant/screenshots/login.png/1)](https://youtu.be/QmP_XRxXXgM)
-
-
 
